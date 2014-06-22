@@ -1,0 +1,65 @@
+[20:08:24] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLServerTweaker
+[20:08:24] [main/INFO]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLServerTweaker
+[20:08:24] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLServerTweaker
+[20:08:24] [main/INFO]: Forge Mod Loader version 7.2.211.1121 for Minecraft 1.7.2 loading
+[20:08:24] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.7.0_60, running on Windows 7:amd64:6.1, installed at C:\Program Files\Java\jre7
+[20:08:24] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[20:08:24] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:08:24] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[20:08:24] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:08:24] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:08:24] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[20:08:24] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[20:08:25] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
+[20:08:25] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[20:08:25] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[20:08:26] [main/INFO]: Launching wrapped minecraft {net.minecraft.server.MinecraftServer}
+[20:08:44] [Server thread/INFO]: Starting minecraft server version 1.7.2
+[20:08:44] [Server thread/INFO]: Attempting early MinecraftForge initialization
+[20:08:44] [Server thread/INFO]: MinecraftForge v10.12.2.1121 Initialized
+[20:08:44] [Server thread/INFO]: Replaced 182 ore recipies
+[20:08:44] [Server thread/INFO]: Completed early MinecraftForge initialization
+[20:08:44] [Server thread/INFO]: Searching E:\Código\Eclipse\MinecraftModding\ExplosionEngineering\mods for mods
+[20:08:56] [Server thread/INFO]: Forge Mod Loader has identified 3 mods to load
+[20:08:56] [Server thread/INFO]: Processing ObjectHolder annotations
+[20:08:56] [Server thread/INFO]: Found 341 ObjectHolder annotations
+[20:08:56] [Server thread/INFO]: Configured a dormant chunk cache size of 0
+[20:08:56] [Server thread/INFO]: Applying holder lookups
+[20:08:56] [Server thread/INFO]: Holder lookups applied
+[20:08:56] [Server thread/INFO]: Loading properties
+[20:08:56] [Server thread/WARN]: server.properties does not exist
+[20:08:56] [Server thread/INFO]: Generating new properties file
+[20:08:56] [Server thread/INFO]: Default game type: SURVIVAL
+[20:08:56] [Server thread/INFO]: Generating keypair
+[20:08:57] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:08:57] [Server thread/INFO]: Forge Mod Loader has successfully loaded 3 mods
+[20:08:57] [Server thread/WARN]: Failed to load operators list: java.io.FileNotFoundException: .\ops.txt (O sistema não pode encontrar o arquivo especificado)
+[20:08:57] [Server thread/WARN]: Failed to load white-list: java.io.FileNotFoundException: .\white-list.txt (O sistema não pode encontrar o arquivo especificado)
+[20:08:57] [Server thread/INFO]: Preparing level "world"
+[20:08:57] [Server thread/INFO]: Loading dimension 0 (world) (net.minecraft.server.dedicated.DedicatedServer@5b9c69f8)
+[20:08:57] [Server thread/INFO]: Loading dimension 1 (world) (net.minecraft.server.dedicated.DedicatedServer@5b9c69f8)
+[20:08:57] [Server thread/INFO]: Loading dimension -1 (world) (net.minecraft.server.dedicated.DedicatedServer@5b9c69f8)
+[20:08:57] [Server thread/INFO]: Preparing start region for level 0
+[20:08:59] [Server thread/INFO]: Preparing spawn area: 7%
+[20:09:00] [Server thread/INFO]: Preparing spawn area: 18%
+[20:09:01] [Server thread/INFO]: Preparing spawn area: 27%
+[20:09:02] [Server thread/INFO]: Preparing spawn area: 39%
+[20:09:03] [Server thread/INFO]: Preparing spawn area: 48%
+[20:09:04] [Server thread/INFO]: Preparing spawn area: 59%
+[20:09:05] [Server thread/INFO]: Preparing spawn area: 67%
+[20:09:06] [Server thread/INFO]: Preparing spawn area: 76%
+[20:09:07] [Server thread/INFO]: Preparing spawn area: 85%
+[20:09:08] [Server thread/INFO]: Preparing spawn area: 94%
+[20:09:08] [Server thread/INFO]: Done (11,544s)! For help, type "help" or "?"
+[20:09:15] [Server thread/INFO]: Stopping the server
+[20:09:15] [Server thread/INFO]: Stopping server
+[20:09:15] [Server thread/INFO]: Saving players
+[20:09:15] [Server thread/INFO]: Saving worlds
+[20:09:15] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[20:09:15] [Server thread/INFO]: Saving chunks for level 'world'/Nether
+[20:09:15] [Server thread/INFO]: Saving chunks for level 'world'/The End
+[20:09:17] [Server thread/INFO]: Unloading dimension 0
+[20:09:17] [Server thread/INFO]: Unloading dimension -1
+[20:09:17] [Server thread/INFO]: Unloading dimension 1
+[20:09:17] [Server thread/INFO]: Applying holder lookups
+[20:09:17] [Server thread/INFO]: Holder lookups applied
