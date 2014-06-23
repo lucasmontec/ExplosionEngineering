@@ -1,0 +1,16 @@
+[
+{
+  "modid": "explosionengineers",
+  "name": "Explosion Engineers",
+  "description": "BOOOOOM.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://gaben.tv",
+  "updateUrl": "",
+  "authorList": ["ZombieLucasMontec"],
+  "credits": "The Forge and FML guys, for beeing awesome.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

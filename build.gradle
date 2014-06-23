@@ -17,9 +17,9 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "explosionengineering-1.7.2-0.1"
+version = "1.7.2-0.1"
 group= "com.lucasmontec.explosionengineering" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "explosionengineering"
+archivesBaseName = "ExplosionEngineering"
 
 minecraft {
     version = "1.7.2-10.12.2.1121"
