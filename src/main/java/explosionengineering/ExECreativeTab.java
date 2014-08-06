@@ -1,6 +1,6 @@
 package main.java.explosionengineering;
 
-import main.java.explosionengineering.items.ExEItems;
+import main.java.explosionengineering.init.ExEItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 

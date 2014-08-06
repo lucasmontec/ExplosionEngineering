@@ -1,7 +1,7 @@
 package main.java.explosionengineering.blocks;
 
 import main.java.explosionengineering.TileEntity.TileEntityOven;
-import main.java.explosionengineering.reference.Strings;
+import main.java.explosionengineering.reference.Reference;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
@@ -17,7 +17,7 @@ public class Oven extends ExEBlock {
 
 	public Oven() {
 		super(Material.iron);
-		setBlockName(Strings.blockOven);
+		setBlockName(Reference.blockOven);
 		setResistance(6.0f);
 		setHardness(2.0f);
 	}

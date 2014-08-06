@@ -2,7 +2,8 @@ package main.java.explosionengineering.world;
 
 import java.util.Random;
 
-import main.java.explosionengineering.blocks.ExEBlocks;
+import main.java.explosionengineering.handlers.ConfigurationHandler;
+import main.java.explosionengineering.init.ExEBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
@@ -59,7 +60,8 @@ public class ExEOreGenerator implements IWorldGenerator {
 	 *            The world beeing generated
 	 */
 	private void generateSurface(Random random, int chunkX, int chunkZ, World world) {
-		addOreSpawn(ExEBlocks.sulfurOre, world, random, chunkX, chunkZ, 4, 6, 3, 8, 30);
+		if (ConfigurationHandler.generateSulfur)
+			addOreSpawn(ExEBlocks.sulfurOre, world, random, chunkX, chunkZ, 4, 6, 3, 8, 30);
 	}
 
 	/**

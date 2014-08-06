@@ -1,11 +1,15 @@
 package main.java.explosionengineering;
 
-import main.java.explosionengineering.blocks.ExEBlocks;
-import main.java.explosionengineering.core.proxy.CommonProxy;
-import main.java.explosionengineering.items.ExEItems;
-import main.java.explosionengineering.reference.Strings;
+import main.java.explosionengineering.handlers.ConfigurationHandler;
+import main.java.explosionengineering.init.ExEBlocks;
+import main.java.explosionengineering.init.ExEItems;
+import main.java.explosionengineering.init.ExERecipes;
+import main.java.explosionengineering.proxy.IProxy;
+import main.java.explosionengineering.reference.Reference;
+import main.java.explosionengineering.util.Log;
 import main.java.explosionengineering.world.ExEOreGenerator;
 import net.minecraft.creativetab.CreativeTabs;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -14,7 +18,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = ExplosionEngineering.MODID, name = ExplosionEngineering.MODNAME, version = ExplosionEngineering.VERSION)
+@Mod(modid = ExplosionEngineering.MODID, name = ExplosionEngineering.MODNAME, version = ExplosionEngineering.VERSION, guiFactory = Reference.GUIFACTORYCLASS)
 public class ExplosionEngineering {
 
 	/*
@@ -30,13 +34,13 @@ public class ExplosionEngineering {
 	 */
 	private static CreativeTabs			exeTab			= new ExECreativeTab(CreativeTabs.getNextID(), MODID);
 
-	@SidedProxy(clientSide = Strings.CLIENTPROXYLOCATION, serverSide = Strings.COMMONPROXYLOCATION)
-	public static CommonProxy			proxy;
+	@SidedProxy(clientSide = Reference.CLIENTPROXYLOCATION, serverSide = Reference.SERVERPROXYLOCATION)
+	public static IProxy				proxy;
 
 	/*
 	 * Provide a 'safe' instance singleton to the entire mod structure
 	 */
-	@Instance
+	@Instance(MODID)
 	public static ExplosionEngineering	_instance;
 
 	/*
@@ -53,13 +57,19 @@ public class ExplosionEngineering {
 		 * Init items/blocks
 		 */
 
+		// Load configuration file (suggested name from forge)
+		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+
 		/*
 		 * Instantiate our blocks
 		 */
 		ExEBlocks.init();
 		ExEItems.init();
 		ExEOreGenerator.register();
-		proxy.registerTileEntities();
+		// proxy.registerTileEntities();
+
+		Log.info("Mod started loading (preinit complete). Preparing for explosions.");
 	}
 
 	@EventHandler
@@ -71,6 +81,10 @@ public class ExplosionEngineering {
 		 * CraftingRecipies
 		 * 'General event handlers
 		 */
+
+		ExERecipes.init();
+
+		Log.info("Mod started loading (init complete). Warming up.");
 	}
 
 	@EventHandler
@@ -78,6 +92,8 @@ public class ExplosionEngineering {
 		/*
 		 * Wrap things up after other mods
 		 */
+
+		Log.info("Mod loaded! (postinit complete). BOOOOM.");
 	}
 
 	/**
