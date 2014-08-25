@@ -1,3 +1,13 @@
+#Keys
+keys.explosionengineering.category=Explosion Engineering
+keys.explosionengineering.charge=Charge
+keys.explosionengineering.release=Release
+
+#Blocks
 tile.explosionengineering:sulfurOre.name=Sulfur Ore
+
+#Items
 item.explosionengineering:sulfur.name=Sulfur
+
+#General
 itemGroup.explosionengineering=Explosion Engineering
