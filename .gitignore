@@ -1,0 +1,8 @@
+*.gz
+*.log
+*.class
+*.mca
+*.lock
+*.dat
+*.dat_old
+*.json

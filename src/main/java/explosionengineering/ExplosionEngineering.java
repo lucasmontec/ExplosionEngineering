@@ -1,5 +1,6 @@
 package main.java.explosionengineering;
 
+import main.java.explosionengineering.client.handler.KeyInputEventHandler;
 import main.java.explosionengineering.handlers.ConfigurationHandler;
 import main.java.explosionengineering.init.ExEBlocks;
 import main.java.explosionengineering.init.ExEItems;
@@ -61,6 +62,8 @@ public class ExplosionEngineering {
 		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
+		proxy.registerKeyBindings();
+
 		/*
 		 * Instantiate our blocks
 		 */
@@ -83,6 +86,8 @@ public class ExplosionEngineering {
 		 */
 
 		ExERecipes.init();
+
+		FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
 
 		Log.info("Mod started loading (init complete). Warming up.");
 	}
